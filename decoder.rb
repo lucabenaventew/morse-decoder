@@ -70,3 +70,10 @@ def decode(sentence)
   end
   sentence_decode.strip
 end
+
+# Tests
+p decode_char('-...') #=> B
+p decode_word('-- -.--') # => MY
+p decode('-- -.--   -. .- -- .') # => MY NAME
+sentence = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
+p decode(sentence) # => A BOX FULL OF RUBIES
